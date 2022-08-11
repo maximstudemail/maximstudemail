@@ -34,7 +34,7 @@
   }
 
   /**
-   * Easy on scroll event listener 
+   * Easy on scroll event listener
    */
   const onscroll = (el, listener) => {
     el.addEventListener('scroll', listener)
@@ -97,6 +97,12 @@
   /**
    * Back to top button
    */
+  let backtotopWrapper = select('.back-to-top-wrapper');
+  backtotopWrapper.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+  })
+
   let backtotop = select('.back-to-top')
   if (backtotop) {
     const toggleBacktotop = () => {
@@ -190,7 +196,7 @@
   });
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate portfolio lightbox
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
@@ -226,7 +232,7 @@
   });
 
   /**
-   * Initiate Pure Counter 
+   * Initiate Pure Counter
    */
   new PureCounter();
 
