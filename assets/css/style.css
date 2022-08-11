@@ -134,7 +134,7 @@ h6 {
 # Navigation Menu
 --------------------------------------------------------------*/
 /**
-* Desktop Navigation 
+* Desktop Navigation
 */
 .navbar {
   padding: 0;
@@ -273,7 +273,7 @@ h6 {
 }
 
 /**
-* Mobile Navigation 
+* Mobile Navigation
 */
 .mobile-nav-toggle {
   color: #fff;
@@ -1169,4 +1169,13 @@ section {
   text-align: center;
   font-size: 13px;
   color: #ccc;
+}
+
+
+@media (max-width: 680px) {
+  * {
+    color: white !important;
+    padding: 0 !important;
+
+  }
 }
